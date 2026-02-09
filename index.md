@@ -5,28 +5,78 @@ nav_order: 1
 ---
 # Thematic Mapping with QGIS
 
-This intermediate-level workshop will demonstrate how to create thematic maps using QGIS, a free and open-source Geographic Information System (GIS) for analyzing, modifying, and visualizing spatial data. Additionally, participants will learn how to perform queries on spatial data and edit the attribute table.
+This intermediate-level workshop will demonstrate how to create thematic maps using [QGIS](https://qgis.org/), a free and open-source Geographic Information System (GIS) for analyzing, modifying, and visualizing spatial data. While previous workshops on [GIS 101](https://ubc-library-rc.github.io/gis-mapping-intro/) and [Reference Mapping with QGIS](https://ubc-library-rc.github.io/gis-reference-mapping/) have honed the fundamental skills and knowledge to begin using GIS, this workshop will focus on data visualization. 
 
-The result of this workshop will be a choropleth map showing the number of chestnut trees lining the streets in each of Vancouver’s neighbourhoods. By the end of the workshop participants will be able to:
-
-- query data from the attribute table
-- create and export selections
-- edit a shapefile 
-- change the the symbolization of spatial data
-- create different kinds of thematic maps, 
-- compose a map document for export
+By the end of this workshop, you will have the confidence to 
+- Explore a dataset's attribute table;
+- Build queries to run selections on your dataset;
+- Evaluate the advantages of various thematic mapping techniques; and
+- Apply this knowledge to create both a choropleth map and a proportional symbol map to visualize the number of douglas fir street trees in each Vancouver neighbourhood. 
 
 
+<!-- 
+ "common_name"  =  'DOUGLAS FIR' or  ("common_name"  =   'BLACK POPLAR'  and  "height_m"  >=  30 ) or  ("common_name"  =   'BLACK COTTONWOOD' and "height_m"  >=  30) or ("common_name"  =  'GIANT SEQUOIA' and  "height_m"  >=  30 ) or ("common_name"  =  'BIGLEAF MAPLE' and  "height_m"  >=  30 ) or ( "common_name"  =  'WESTERN RED CEDAR' and "height_m"  >=  30) -->
 
 The final map you will create will look something like this:
-![demo choropleth map](./content/images/demo-choropleth-map.jpeg)
+
+<!--carousel styling and code from W3schools-->
+<html>
+<link rel="stylesheet" href="./style.css">
+<div class="slideshow-container">
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img src="./content/images/" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="./content/images/" style="width:100%">
+</div>
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="./content/images/" style="width:100%">
+</div>
+<a class="prev1" onclick="plusSlides(-1)">❮</a>
+<a class="next1" onclick="plusSlides(1)">❯</a>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
 
 ---
 ## Before the Workshop!!
 
 1. **Review our Introduction to Mapmaking with QGIS** Please note that the fundamental skills and concepts pertaining to spatial data, map types, and the QGIS interface will *not be* covered during this workshop. Therefore, prior to the workshop date, please review our *[Introduction to Mapmaking with QGIS](https://ubc-library-rc.github.io/gis-mapping-intro/)*. **Review of this resources *is required* prior to workshop attendance.** 
 
-2. **Make sure you've downloaded QGIS** QGIS can be downloaded from [qgis.org's Downloads page](https://qgis.org/en/site/forusers/download.html). In most cases, you'll want to download and install the **Long term release** instead of the latest release. This will give you most of the functionality you'll need without encountering the software bugs of newly released versions. See this page <a href="[./installing-qgis.html](https://ubc-library-rc.github.io/gis-mapping-intro/content/gis-overview.html)" target="_blank"><b>Installing QGIS</b></a> for further guidance. 
+2. **Make sure you've downloaded QGIS** QGIS can be downloaded from [qgis.org's Downloads page](https://qgis.org/en/site/forusers/download.html). In most cases, you'll want to download and install the **Long term release** instead of the latest release. This will give you most of the functionality you'll need without encountering the software bugs of newly released versions. See <a href="https://ubc-library-rc.github.io/gis-mapping-intro/content/gis-overview.html#downloading--installing-qgis" target="_blank"><b>here</b></a> for further guidance on installing QGIS. 
 
 2.  **Download and unzip the workshop data folder** below. Download it to a folder on your physical computer, such as Desktop or Downloads, _not_ OneDrive.
 
