@@ -78,7 +78,7 @@ function showSlides(n) {
 
 2. **Make sure you've downloaded QGIS** QGIS can be downloaded from [qgis.org's Downloads page](https://qgis.org/en/site/forusers/download.html). In most cases, you'll want to download and install the **Long term release** instead of the latest release. This will give you most of the functionality you'll need without encountering the software bugs of newly released versions. See <a href="https://ubc-library-rc.github.io/gis-mapping-intro/content/gis-overview.html#downloading--installing-qgis" target="_blank"><b>here</b></a> for further guidance on installing QGIS. 
 
-2.  **Download and unzip the workshop data folder** below. Download it to a folder on your physical computer, such as Desktop or Downloads, _not_ OneDrive.
+2.  **Download and unzip the workshop data folder** below. Download it to a location on your physical computer, such as Desktop or Downloads, _not_ OneDrive.
 
 [Download Workshop Data](./thematic-mapping-workshop.zip){: .btn .btn-blue }
 
