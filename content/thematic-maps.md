@@ -59,6 +59,7 @@ Useful to show intensity or frequency of occurrence. Heatmaps can be thought abo
 ![heat map](./images/chestnut-heatmap.jpeg)
 
 See [here](https://ubc-library-rc.github.io/gis-reference-mapping/content/hands-on13.html) for a short tutorial on making heatmaps with QGIS. 
+
 ---
 
 ## Cartograms 

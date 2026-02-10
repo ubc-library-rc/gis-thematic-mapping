@@ -61,7 +61,7 @@ Be sure to add `vanHoodsCount` to your project if it doesn't add automatically. 
 
 
 
-## Centroids: From polygon to point 
+<!-- ## Centroids: From polygon to point  -->
 
-<!-- then run centroid on count (for proportional symbol map later) -->
+<!-- run centroid on count (for proportional symbol map later) or move to proportional symbol map section -->
 
