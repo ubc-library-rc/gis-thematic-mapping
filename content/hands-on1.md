@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Attribute Table
+title: 1. The Attribute Table
 nav_order: 1
 parent: Hands On
 ---
