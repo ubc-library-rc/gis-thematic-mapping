@@ -14,7 +14,7 @@ Remember, a choropleth map visualizes different values across standard geographi
 
 To create a choropleth map, we need to update the **symbology** of the layer `vanHoodsCount`.  Symbology is a layer property that governs the color, transparency, and line thickness of the features displayed. -->
 
-
+<br>
 
 *1*{: .circle .circle-purple} In the Layers Panel, right-click on `vanHoodsCount` and go to **Properties**. Then, in the Layer Properties window, navigate to the **Symbology** tab. 
 
@@ -23,19 +23,28 @@ To create a choropleth map, we need to update the **symbology** of the layer `va
 
 <img src="./images/layer-properties-single-symbol.png" style="width:80%">
 
+<br>
 
 *2*{: .circle .circle-purple} At the very top, we can see that the symbology is set to **Single Symbol**. This means every feature in the dataset is rendered in the same color. Since we want to a variation, with different colors reflecting the number of trees in each neighbourhood, we need to change the symbology. Click on **Single Symbol** and from the drop-down, choose **Graduated**. This will allow you to display graduated colors representing classes of attribute values.
 
 <img src="./images/graduated-symbology.png" style="width:90%">
 
+<br>
+
 *3*{: .circle .circle-purple} Set the **Value** to DougFirs. (Or Count, if you didn't specify the attribute back when you ran the Count Points in Polygon tool.) This tells QGIS which numerical field to visualize.
 
 <img src="./images/symbology-value.png" style="width:90%">
 
+<br>
+
 *4*{: .circle .circle-purple} **Precision** refers to how many decimals you want to include, and checking the **Trim** box removes trailing zeros from the legend. Because we are dealing with whole numbers of trees, so long as Trim is checked it doesn’t matter the precision.
+
+<br>
 
 *5*{: .circle .circle-purple} You can select a color ramp from the given options, or design your own. Hover over “All Color Ramps” to see all options. For now, change the color ramp to **greens**. 
 <img src="./images/symbology-greens.png" style="width:90%">
+
+<br>
 
 *6*{: .circle .circle-purple} So far, we’ve set up the symbology but we have to apply it to our values. Click **Classify** to classify the `DougFirs` values. (If nothing shows up, check the attribute table of `vanHoodsCount` to ensure `DougFirs` is a numerical field.) 
 
@@ -43,7 +52,9 @@ To create a choropleth map, we need to update the **symbology** of the layer `va
 
 Then, click **Apply** to see your map change. Only after clicking **Classify** and then **Apply** will you see the results.
 
-*7*{: .circle .circle-purple} Change the classification **Mode** to **Natural Breaks (Jenks)**. Keep the number of **Classes** set to **5**. 
+<br>
+
+*7*{: .circle .circle-purple} Change the classification **Mode** to **Natural Breaks (Jenks)**. Keep the number of **Classes** at **5**. 
 
 <img src="./images/symbology-complete.png" style="width:90%">
 
@@ -62,6 +73,7 @@ Then, click **Apply** to see your map change. Only after clicking **Classify** a
 -  **Mode** : Natural Breaks (Jenks) (see more on classification)
 - **Classes**: 5 -->
 
+<br>
 
 *8*{: .circle .circle-purple} Click **Apply** again and drag/resize your symbology window so you can see your map canvas. When you are satisfied, click **OK** and close the Layer Properties/Symbology window.
 
