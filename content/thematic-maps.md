@@ -58,11 +58,14 @@ Dot density maps are useful to show the concentration and distribution of discre
 Useful to show intensity or frequency of occurrence. Heatmaps can be thought about as generalized dot density maps. 
 ![heat map](./images/chestnut-heatmap.jpeg)
 
+See [here](https://ubc-library-rc.github.io/gis-reference-mapping/content/hands-on13.html) for a short tutorial on making heatmaps with QGIS. 
 ---
 
 ## Cartograms 
 Cartograms distort area to emphasize the value associated with a geographic region. When using cartograms, it's important to consider whether your audience is already familiar with the un-distorted  geography, otherwise they might not glean the added information. 
 ![cartogram map](./images/chestnut-cartogram-map.jpeg)
+
+See [here](https://ubc-library-rc.github.io/gis-reference-mapping/content/hands-on14.html) for a short tutorial on making cartograms with QGIS.
 
 ----
 
