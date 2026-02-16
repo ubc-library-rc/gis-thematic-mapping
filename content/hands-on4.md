@@ -6,12 +6,18 @@ parent: Hands On
 ---
 
 # Making a Proportional Symbol Map
+Now, let's use symbols to convey the range of total trees by making a proportional symbol map of Douglas Firs in each Vancouver neighbourhood. 
 
-You can make proportional symbol maps in QGIS simply applying a **graduated symbology** to a point layer, where each point represents a standard geographic area and contains a value of interest. 
+You can make proportional symbol maps in QGIS simply by applying a **graduated symbology** to a *point layer*, where each point represents a standard geographic area *and contains the value of interest*. 
 
+
+![demo proportional symbol map here](./images/demo-proportional-symbol-map.png)
+
+---
+
+
+## Convert polygons to points 
 Currently, we have a polygon layer `vanHoodsCount` but no point layer for neighbourhoods. We can turn this layer into a point layer, however, by running another QGIS processing tool. 
-
-
 
 *1*{: .circle .circle-yellow} In the **Processing Toolbox**, search for the tool called **Centroids**. It should be under **Vector Geometry**. 
 
@@ -21,7 +27,6 @@ Run the **Centroids** tool with the following parameters:
 - Save the output layer as a file to your `thematic-mapping-workshop/data` folder, and call it `vanHoodsCount-centroids`. 
 <!-- To save the output file as a permanant layer even before running the tool,  -->
 
-
 <img src="./images/centroids-tool.png" style="width:100%">
 
 <br>
@@ -30,28 +35,34 @@ Run the **Centroids** tool with the following parameters:
 
 <img src="./images/centroids-layer.png" style="width:100%">
 
-
 <br> 
+
 *3*{: .circle .circle-yellow} Open the Layer Properties of `vanHoodsCount-centroids` and navigate to the **Symbology**. 
 
 - Change the symbology type to **Graduated**.
 - Set the **Value** to `DougFirs`.
-- Then, **change method to Size**.
-- Change the minimum size to **3** and the maximum size to at least 20. 
+- Then, change **Method** to **Size**.
+- Change the minimum size to **3**mm and the maximum size to at least **20**mm. 
 
 Then, hit **Classify** and **Apply**.
 
 <img src="./images/proportional-symbology-complete.png" style="width:100%">
 
 
-Just like in the previous page, you can change the classification mode.
+<br>
+*4*{: .circle .circle-yellow} Just like in the previous page, you can change the classification mode. Keep it at **Natural Breaks (Jenks)**. 
 
 
-*4*{: .circle .circle-yellow} To change the symbol symbology, click on Symbol option and then select “Simple Marker”.
+<br>
+*5*{: .circle .circle-yellow} To change the symbol symbology, click on Symbol option and then select “Simple Marker”.
 
 <img src="./images/change-symbol-symbology.png" style="width:90%">
 
 
-*5*{: .circle .circle-yellow} When you're satisfied, click **OK** and return to the map view. 
+<br>
+
+*6*{: .circle .circle-yellow} When you're satisfied, click **OK** and return to the map view. 
 
 <img src="./images/proportional-symbology.png" style="width:100%">
+
+<br>
