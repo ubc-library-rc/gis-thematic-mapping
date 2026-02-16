@@ -5,33 +5,38 @@ nav_order: 5
 parent: Hands On
 ---
 # Adding Labels
-Now we have two layers, one choropleth and one proportional symbol, visualizing the number of Douglas Fir street trees in each Vancouver neighbourhood. However, some context information might be useful, such as name of neighbourhood and/or number of Douglas Firs. 
+Now we have two thematic visualizations of Douglas Fir street trees by Vancouver neighbourhood. However, some contextual information might be useful, such as the names of neighbourhoods and/or the total number of Douglas Firs in each neighbourhood. 
+
+---
 
 ## Add neighbourhood labels
-First, let's add the names of neighbourhoods to our choropleth map. 
+First, let's add the names of neighbourhoods to our choropleth map. Turn the proportional symbol layer off so it isn't distracting. 
 
-Turn the proportional symbol layer off so it isn't distracting. 
-
-Open the Layer Properties for `vanHoodsCount` and navigate to **Labels**. Currently, no labels are set. 
+*1*{: .circle .circle-yellow} Open the Layer Properties for `vanHoodsCount` and navigate to **Labels**. Currently, no labels are set. 
 
 Set labelling to **Single Labels** and set the **Value** to `NAME`. Click **Apply** and see what the map looks like.
 
 <img src="./images/neighbourhood-labels1.png" style="width:100%">
 
-While labels appear for the neighbourhoods, they are a bit difficult to see. There are a couple things we can do to make the labels more visible. 
+<br><br>
 
-Back in the Layers properties, increase the font size to at least 12 Points. 
+*2*{: .circle .circle-yellow} While labels appear for the neighbourhoods, they are a bit difficult to see. There are a couple things we can do to make the labels more visible. 
 
-<img src="./images/add-neighbourhood-labels1.png" style="width:80%">
+- 2.1 Back in the Layers Properties, increase the **font size** to at least 12 Points. 
 
-Add a buffer around the text, something light colored like white but then drop the opacity a bit. 
+<img src="./images/add-neighbourhood-labels1.png" style="width:80%; padding-left:20px">
+<br>
 
-<img src="./images/add-neighbourhood-labels2.png" style="width:80%">
 
-then go down to Placement and change the placement to horizontal. 
+- 2.2 Add a **Buffer** around the text, something light colored like white but then drop the opacity a bit. 
 
-<img src="./images/add-neighbourhood-labels3.png" style="width:80%">
+<img src="./images/add-neighbourhood-labels2.png" style="width:80%; padding-left:20px">
+<br>
 
+- 2.3 Then, go down to **Placement** and change the placement to horizontal. 
+
+<img src="./images/add-neighbourhood-labels3.png" style="width:80%; padding-left:20px">
+<br>
 
 
 <img src="./images/neighbourhood-labels2.png" style="width:100%">
@@ -42,5 +47,24 @@ then go down to Placement and change the placement to horizontal.
 ## Add count labels 
 Now, let's add the total number of Douglas Firs in each neighbourhood to our proportional symbol map. 
 
+*1*{: .circle .circle-yellow} Turn the proportional symbol layer back on. You'll notice the neighbourhood labels obscure some of the symbols. If you want your map to have both layers, you might need to adjust the Placement of one or both labels. You can Toggle on and off a layer's labels (without deleting your label settings) by right-clicking the layer, and selecting **Show Labels**. If labels are on, they will turn off, and vice versa. 
 
-You can add Labels from the layer Properties as well, setting Single Labels according to the Value chestnut-trees. Adding a Buffer or adjusting the font color, and changing the Placement mode to “Offset from Point” will allow you to visualize the number above the symbol.
+<img src="./images/show-hide-labels.png" style="width:100%">
+
+
+<br>
+*2*{: .circle .circle-yellow} Now, just like above, open the Layer Properties for `vanHoodsCount-centroids` and navigate to **Labels**. Currently, no labels are set.
+
+<br>
+
+*3*{: .circle .circle-yellow} Set labelling to **Single Labels** and set the **Value** to `DougFirs` (or `Count`). Click **Apply** and see what the map looks like.
+
+<img src="./images/symbol-labels1.png" style="width:100%">
+
+<br>
+*4*{: .circle .circle-yellow} Just like before, adjust the font size and color, and change the Placement mode, this time to “Offset from Point”. This will allow you to visualize the number above the symbol.
+
+
+<img src="./images/symbol-labels2.png" style="width:100%">
+
+You may notice that the labels are lost over the smaller points, which means you might want to increase the size of the smallest points in your symbology. 
