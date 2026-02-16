@@ -1,7 +1,6 @@
 # Thematic Mapping with QGIS
 ### UBC Library Research Commons
 
-:heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
 
 Description: This intermediate-level workshop will demonstrate how to create thematic maps using QGIS, a free and open-source Geographic Information System (GIS) for analyzing, modifying, and visualizing spatial data. Additionally, participants will learn how to perform queries on spatial data and edit the attribute table.
 
