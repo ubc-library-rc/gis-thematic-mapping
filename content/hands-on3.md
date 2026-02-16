@@ -9,7 +9,7 @@ parent: Hands On
 
 As it is, we can't glean any information regarding the number of Douglas Firs by simply looking at `vanHoodsCount`. However, as we saw in the Attribute Table, `vanHoodsCount` *does* contain this information. So, what we need to do is change the **Symbology** of `vanHoodsCount` to render visible the values in the `DougFirs` field. We can use either color or symbols to convey the range of total trees. Let's begin by making a choropleth map, using a color gradient to visualize the number of Douglas Fir street trees in each Vancouver neighbourhood.
 
-![demo choropleth map here](./images/demo-choropleth-map.png)
+![demo choropleth map here](./images/demo-choropleth-map.jpeg)
 
 ---- 
 <!-- 

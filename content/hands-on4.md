@@ -11,7 +11,7 @@ Now, let's use symbols to convey the range of total trees by making a proportion
 You can make proportional symbol maps in QGIS simply by applying a **graduated symbology** to a *point layer*, where each point represents a standard geographic area *and contains the value of interest*. 
 
 
-![demo proportional symbol map here](./images/demo-proportional-symbol-map.png)
+<!-- ![demo proportional symbol map here](./images/demo-proportional-symbol-map.png) -->
 
 ---
 
