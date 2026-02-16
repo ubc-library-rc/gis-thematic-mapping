@@ -5,11 +5,11 @@ nav_order: 5
 parent: Hands On
 ---
 # Adding Labels
-Now we have two thematic visualizations of Douglas Fir street trees by Vancouver neighbourhood. However, some contextual information might be useful, such as the names of neighbourhoods and/or the total number of Douglas Firs in each neighbourhood. 
+We now have two thematic visualizations of Douglas Fir street trees by Vancouver neighbourhood. However, some contextual information might be useful, such as the names of neighbourhoods and/or the total number of Douglas Firs in each neighbourhood. 
 
 ---
 
-## Add neighbourhood labels
+## Label Neighbourhoods
 First, let's add the names of neighbourhoods to our choropleth map. Turn the proportional symbol layer off so it isn't distracting. 
 
 *1*{: .circle .circle-yellow} Open the Layer Properties for `vanHoodsCount` and navigate to **Labels**. Currently, no labels are set. 
@@ -44,10 +44,10 @@ Set labelling to **Single Labels** and set the **Value** to `NAME`. Click **Appl
 
 <br>
 
-## Add count labels 
+## Label Proportional Symbols
 Now, let's add the total number of Douglas Firs in each neighbourhood to our proportional symbol map. 
 
-*1*{: .circle .circle-yellow} Turn the proportional symbol layer back on. You'll notice the neighbourhood labels obscure some of the symbols. If you want your map to have both layers, you might need to adjust the Placement of one or both labels. You can Toggle on and off a layer's labels (without deleting your label settings) by right-clicking the layer, and selecting **Show Labels**. If labels are on, they will turn off, and vice versa. 
+*1*{: .circle .circle-yellow} Turn the proportional symbol layer back on. You'll notice the neighbourhood labels obscure some of the symbols. You can Toggle on and off a layer's labels (without deleting your label settings) by right-clicking the layer, and selecting **Show Labels**. If labels are on, they will turn off, and vice versa. 
 
 <img src="./images/show-hide-labels.png" style="width:100%">
 
@@ -67,4 +67,21 @@ Now, let's add the total number of Douglas Firs in each neighbourhood to our pro
 
 <img src="./images/symbol-labels2.png" style="width:100%">
 
+
+## Label Visibility 
 You may notice that the labels are lost over the smaller points, which means you might want to increase the size of the smallest points in your symbology. 
+
+If you just want to have proportionals symbols against the neighbourhoods, consider adding `vanHoods` back to your map as a baselayer.
+
+If you want your map to have both layers, you might need to adjust the Placement of one or both labels. Alternatively, you can tell QGIS not to overlap layer labels by "configuring project labeling rules". 
+
+<img src="./images/prevent-layer-overlap.png" style="width:100%">
+
+<img src="./images/no-labeling-overlap.png" style="width:100%">
+
+
+--- 
+
+***Once you are finished symbolizing your maps and adding labels, remove any unnecessary layers from your QGIS project.***
+
+
