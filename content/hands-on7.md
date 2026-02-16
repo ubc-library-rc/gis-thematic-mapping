@@ -11,11 +11,14 @@ You can export your map as an image, PDF, or scalable vector graphic from the Pr
 To Do
 {: .label .label-green }
 
+<img src="./images/export-layout.png" style="width:100%">
+
 1. In the Print Layout Menu, click on Layout and then on **Export as Image**.
 
-2. Save your file as a .jpeg image in your project folder. When exporting as an image or PDF, you will be prompted to enter the resolution. I recommend increasing the resolution to at least 450dpi, otherwise your map will be blurry.
+2. Save your file as a .jpeg image in your project folder. When exporting as an image or PDF, you will be prompted to enter the resolution. I recommend increasing the resolution to at least 500dpi, otherwise your map will be blurry.
 
 3. Close the print layout menu. Open your map image to see how it turned out.
+<img src="./images/DougFirMap.jpeg" style="width:100%">
 
 
 4. **Save your Print Layout** and close it. Then **Save your QGIS Project** and close it as well. Congratulations! You have made a thematic map!
