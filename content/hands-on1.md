@@ -120,9 +120,24 @@ We need to create a dataset that is just Douglas Firs. To do this, we can "expor
 <img src="./images/export-selection.png" style="width:100%">
 
 <br>
-*2*{: .circle .circle-yellow} In the window that opens, give the new file both a name *and a location*. To give it a location, click on the three dots and navigate to the `thematic-mapping-workshop/data` folder. Call this file `vanDougFirs`. Everything else can remain as default. Click **OK**. 
+*2*{: .circle .circle-yellow} In the window that opens, give the new file both a name *and a location*. To give it a location, click on the three dots and navigate to the `thematic-mapping-workshop/data` folder. Call this file `vanDougFirs`. 
 
-<img src="./images/save-selection-as-layer.png" style="width:70%">
+**Then, expand "Select fields to export and their export options". Scroll down to `geo_point_2d` and check `Use Key/Value`.**
+
+
+
+<img src="./images/save-selection-as-layer2.png" style="width:70%">
+
+<img src="./images/fix-data-ssue.png" style="width:70%">
+
+Everything else can remain as default. Click **OK**. 
+
+<!-- **NOTE THAT IF YOU ARE USING A WINDOWS COMPUTER, YOU MIGHT GET AN ERROR.** 
+{: .warn}
+
+**IF YOU GET AN ERROR EXPORTING THE DATA AT THIS STEP, return to the Export dialogue box and expand "Select fields to export and their export options". Then, scroll down to `geo_point_2d` and check `Use Key/Value`.**  -->
+
+
 
 <br>
 *3*{: .circle .circle-yellow} The new layer should add automatically to your map. If not, add it now. 
