@@ -10,7 +10,7 @@ Once you are satisfied with your layer symbology, it’s time to create a **Prin
 
 You can create multiple Print Layouts per QGIS project. By giving each Print Layout a unique name, and saving it (and saving your QGIS project) regularly, you can return to a Print Layout from the Project Menu and continue working.
 
-- See The QGIS user guide here for a comprehensive introduction to the [QGIS Print Layout](https://docs.qgis.org/3.40/en/docs/training_manual/map_composer/map_composer.html).
+- See The QGIS user guide here for a comprehensive introduction to the [QGIS Print Layout](https://docs.qgis.org/3.40/en/docs/training_manual/map_composer/map_composer.html){:target="_blank"}.
 
 - For a more detailed tutorial on map production, including customization of map elements, please refer to the Research Commons' workshop on <a href="https://ubc-library-rc.github.io/gis-reference-mapping/content/hands-on5.html" target="_blank">Mapping for Academic Publication</a>
 
@@ -96,9 +96,9 @@ Under item properties, scroll down until you see Image Rotation. Choose Sync wit
 <img src="./images/add-title2.png" style="width:100%">
 
 
-Finally, it's customary to include the map author and data sources. Again using the **Add label** item option, add your name and the data source statement such as `Data source: Vancouver Open Data Portal.` to the bottom of your map. 
+It's also customary to include the map author and data sources. Again using the **Add label** item option, add your name and the data source statement such as `Data source: Vancouver Open Data Portal.` to the bottom of your map. 
 
-
+Finally, you can add a **neatline** to the map item itself. A **neatline** is the border around your map frame. You can add a neatline by turning on the **Frame** option of your map item, and then styling it. Be sure to click back into your Map item in order to expose this item's properties. 
 
 <!-- 
 *7*{: .circle .circle-yellow} Finally, you can add a neatline to the map item itself. A neatline is the border around your map frame. You can add a neatline by turning on the **Frame** option of your map item, and then styling it.  -->

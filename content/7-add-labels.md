@@ -53,6 +53,7 @@ Now, let's add the total number of Douglas Firs in each neighbourhood to our pro
 
 
 <br>
+
 *2*{: .circle .circle-yellow} Now, just like above, open the Layer Properties for `vanHoodsCount-centroids` and navigate to **Labels**. Currently, no labels are set.
 
 <br>
@@ -62,6 +63,7 @@ Now, let's add the total number of Douglas Firs in each neighbourhood to our pro
 <img src="./images/symbol-labels1.png" style="width:100%">
 
 <br>
+
 *4*{: .circle .circle-yellow} Just like before, adjust the font size and color, and change the Placement mode, this time to “Offset from Point”. This will allow you to visualize the number above the symbol.
 
 

@@ -6,7 +6,7 @@ parent: Hands On
 ---
 # Spatial Analysis
 
-Remember, [QGIS](https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/spatial_analysis_interpolation.html#:~:text=Overview,Geographic%20Information%20System%20(GIS).) defines spatial analysis as "the process of manipulating spatial information to extract new information and meaning from the original data." Today's workshop is only concerned with vector data, and therefore we will focus on **vector analysis**. 
+Remember, [QGIS](https://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/spatial_analysis_interpolation.html#:~:text=Overview,Geographic%20Information%20System%20(GIS).){:target="_blank"} defines spatial analysis as "the process of manipulating spatial information to extract new information and meaning from the original data." Today's workshop is only concerned with vector data, and therefore we will focus on **vector analysis**. 
 
 Since our goal is to create a thematic map that visualize the spatial distribution of Douglas Fir street trees across Vancouver, we need to find out how many Douglas Firs are in each neighbourhood. While we could count up the many, *many* points by hand, this would take a long time and could introduce human error. Instead, we will use QGIS vector analysis tools to do the counting for us. 
 

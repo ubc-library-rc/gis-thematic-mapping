@@ -56,7 +56,7 @@ Then, click **Apply** to see your map change. Only after clicking **Classify** a
 
 <br>
 
-*7*{: .circle .circle-yellow} While the default classification mode is set to Equal Count (Quantile), you can choose amongst different classification modes. Classification modes determine how the distribution of data are grouped or “classified”, and therefore which values are associated with which colors. Read more about different classification modes [here](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/data-classification-methods.htm). 
+*7*{: .circle .circle-yellow} While the default classification mode is set to Equal Count (Quantile), you can choose amongst different classification modes. Classification modes determine how the distribution of data are grouped or “classified”, and therefore which values are associated with which colors. Read more about different classification modes [here](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/data-classification-methods.htm){:target="_blank"}. 
 
 - Change the classification **Mode** to **Natural Breaks (Jenks)**. 
 - You can also increase or decrease the number of classes, though between 5 and 7 is best practice. For today, keep the number of **Classes** set to **5**. 
