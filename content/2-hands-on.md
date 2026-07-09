@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hands On
-nav_order: 2
+nav_order: 3
 has_children: true
 ---
 
@@ -17,7 +17,7 @@ First things first, be sure you've downloaded *and unzipped* the workshop data f
 
 Inside the `thematic-mapping-workshop` folder you will see the following:
 
-- a `data` subfolder, containing data from the [Vancouver Open Data Portal](https://opendata.vancouver.ca/pages/home/), and 
+- a `data` subfolder, containing data from the [Vancouver Open Data Portal](https://opendata.vancouver.ca/pages/home/){:target="_blank"}, and 
 
 - a `thematic-mapping.qgz` QGIS project.
 
@@ -30,7 +30,7 @@ Double click `thematic-mapping.qgz` to open the project in QGIS. Once open, Zoom
 <br>
 
 ### A note on data 
-For this workshop, we will begin with a pre-made project that contains 'clean' data that is organized into folders. The project file, `thematic-mapping.qgz`, already contains the file paths to two layers: `vanShoreline` and `vanHoods`. `vanShoreline` is a shapefile of the coastal outline of the City of Vancouver, and `vanHoods` is a shapefile of the city's neighbourhoods, or '[Local Area Boundaries](https://opendata.vancouver.ca/explore/dataset/local-area-boundary/information/?disjunctive.name)'. The `data` subfolder also contains `vanBigTrees` a geojson file containing a subset of [Vancouver Street Trees](https://opendata.vancouver.ca/explore/dataset/public-trees/map/?disjunctive.common_name&disjunctive.species_name&location=12,49.24773,-123.08842&basemap=jawg.streets). The source data of this subset contains over 180,000 features and is 72MB. 
+For this workshop, we will begin with a pre-made project that contains 'clean' data that is organized into folders. The project file, `thematic-mapping.qgz`, already contains the file paths to two layers: `vanShoreline` and `vanHoods`. `vanShoreline` is a shapefile of the coastal outline of the City of Vancouver, and `vanHoods` is a shapefile of the city's neighbourhoods, or '[Local Area Boundaries](https://opendata.vancouver.ca/explore/dataset/local-area-boundary/information/?disjunctive.name){:target="_blank"}'. The `data` subfolder also contains `vanBigTrees` a geojson file containing a subset of [Vancouver Street Trees](https://opendata.vancouver.ca/explore/dataset/public-trees/map/?disjunctive.common_name&disjunctive.species_name&location=12,49.24773,-123.08842&basemap=jawg.streets){:target="_blank"}. The source data of this subset contains over 180,000 features and is 72MB. 
 
 When mapping independently, you will likely begin by searching for and evaluating datasets on your own. This can be a time consuming (and potentially expensive!) step. It’s also common to have to clean, transform, or otherwise process your data in order for it to work correctly in your GIS project. We are avoiding this by design by providing a prepared QGIS project and pre-processed data for this workshop.
 

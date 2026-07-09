@@ -33,7 +33,7 @@ To create a choropleth map, we need to update the **symbology** of the layer `va
 
 <br>
 
-*3*{: .circle .circle-yellow} Set the **Value** to DougFirs. (Or Count, if you didn't specify the attribute back when you ran the Count Points in Polygon tool.) This tells QGIS which numerical field to visualize. 
+*3*{: .circle .circle-yellow} Set the **Value** to DougFirs. (Or Count, if you didn't specify the attribute back when you ran the Count Points in Polygon tool.) This tells QGIS which numerical field to visualize. (Note: If nothing shows up, check the attribute table of `vanHoodsCount` to ensure `DougFirs` is a numerical field.) 
 
 <img src="./images/symbology-value.png" style="width:90%">
 
@@ -48,7 +48,7 @@ To create a choropleth map, we need to update the **symbology** of the layer `va
 
 <br>
 
-*6*{: .circle .circle-yellow} So far, we’ve set up the symbology but we have to apply it to our values. Click **Classify** to classify the `DougFirs` values. (If nothing shows up, check the attribute table of `vanHoodsCount` to ensure `DougFirs` is a numerical field.) 
+*6*{: .circle .circle-yellow} So far, we’ve set up the symbology but we have to apply it to our values. Click **Classify** to classify the `DougFirs` values. 
 
 <img src="./images/symbology-classify.png" style="width:90%">
 
